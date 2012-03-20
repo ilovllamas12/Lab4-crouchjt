@@ -1,0 +1,17 @@
+1) A mock object was created to take the place of the database and the simulated the supposed
+actions of the database with the mock object in the test.
+
+2) LastCall.Throw(Exception)
+
+3) Yes, if it does not return a value the stub can be replaced  by a 
+Dynamic Mock.
+
+4) A database is created and then mocked, then a hotel object is created and it is given the database,
+After that it checks to make sure that the hotel.availableRooms is the same as the actual
+count in the database.
+
+5) The tests create the objects to be used in the test, adds them to the service locator,
+and creates a user and books the objects with the user. Lastly it tests to make sure that all
+went correctly and there is only one available object because the other has been booked and
+that the remaining flight is the correct one.
+
